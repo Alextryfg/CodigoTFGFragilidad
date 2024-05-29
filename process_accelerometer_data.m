@@ -17,7 +17,7 @@ function results = process_accelerometer_data(filename, leg_length)
     % Obtener la frecuencia de muestreo original
     fs_original = 1 / mean(diff(tiempo));
 
-    % Obtener dt
+    % Obtener delta time
     dt_values = diff(tiempo);
     dt = mean(dt_values);
 
