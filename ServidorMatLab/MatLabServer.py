@@ -10,6 +10,7 @@ eng = matlab.engine.start_matlab()
 
 UPLOAD_FOLDER = 'uploads'  # Directory to save the files
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)  # Create the directory if it doesn't exist
+SCRIPT_FOLDER = r'C:\Users\alexc\Desktop\uploads'  # Directory where your MATLAB script is located
 
 def is_number(s):
     try:
@@ -57,7 +58,7 @@ def process_csv():
 
         # Execute the MATLAB script
         try:
-            eng.addpath(UPLOAD_FOLDER)  # Add the MATLAB script path
+            eng.addpath(SCRIPT_FOLDER)  # Add the MATLAB script path
             results = eng.process_accelerometer_data(new_filepath, leg_length)
         except Exception as e:
             return jsonify({'error': str(e)}), 500
