@@ -31,8 +31,5 @@ Ejecuta el script principal para iniciar el analisis:
 python main.py
 ```
 
-## 📄 Licencia
-Este proyecto esta bajo la licencia [MIT](LICENSE).
-
 ## 📩 Contacto
 Si tienes preguntas o sugerencias, contactame a traves de [alexfuegomez@gmail.com].
